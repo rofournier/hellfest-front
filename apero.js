@@ -1,14 +1,12 @@
 // Determine WebSocket protocol based on page protocol
 const WS_PROTOCOL = location.protocol === 'https:' ? 'wss:' : 'ws:';
 // Use environment variable or fallback for WebSocket URL
-const WS_URL = `ws//37.59.107.234:8000/ws`;
-
+const WS_URL = atob("d3M6Ly8zNy41OS4xMDcuMjM0OjgwMDAvd3M=");
 let ws = null;
 let pseudo = localStorage.getItem('hellpseudo') || '';
 let users = [];
 let isConnecting = false;
 let reconnectTimeout = null;
-
 const usersDiv = document.getElementById('metal-chat-users');
 const messagesDiv = document.getElementById('chat-messages');
 const form = document.getElementById('chat-form');
@@ -118,8 +116,7 @@ function renderMessage({ txt, pseudo: msgPseudo, timestamp }) {
 function renderSystemMessage(txt) {
   const msgDiv = document.createElement('div');
   msgDiv.className = 'metal-chat-message system';
-  msgDiv.innerHTML = `
-    <span class="metal-chat-time">${formatTime(new Date())}</span>
+  msgDiv.innerHTML = `    <span class="metal-chat-time">${formatTime(new Date())}</span>
     <div class="metal-chat-text">${escapeHTML(txt)}</div>
   `;
   messagesDiv.appendChild(msgDiv);
