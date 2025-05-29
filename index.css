@@ -1,0 +1,971 @@
+body {
+  background-color: #111;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    repeating-linear-gradient(45deg, #222 0%, #222 2%, #111 2%, #111 4%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+
+#list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  justify-content: center;
+}
+
+.card {
+  list-style: none;
+  margin: 10px 0;
+  padding: 10px 12px;
+  background: linear-gradient(135deg, #222 60%, #900 100%);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px #000a;
+  color: #fff;
+  font-family: "Metal Mania";
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px #000, 0 0 8px #900;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+  width: 320px;
+  box-sizing: border-box;
+  transform: perspective(1000px) translateZ(0);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 0, 0, 0.1),
+    transparent
+  );
+  transform: translateX(-100%);
+  transition: transform 0.6s;
+}
+
+#search {
+  width: calc(100% - 24px);
+  background: #000;
+  border: 1px solid #600;
+  border-radius: 4px;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  transform: perspective(1000px) translateZ(30px) rotateX(5deg);
+  box-shadow: 0 8px 32px rgba(255, 0, 0, 0.3);
+  border-color: #f00;
+}
+
+.card:hover::before {
+  transform: translateX(100%);
+}
+
+/* Add touch animation support */
+@media (hover: none) {
+  .card:active {
+    transform: scale(0.98);
+    box-shadow: 0 4px 16px rgba(255, 0, 0, 0.5);
+    border-color: #f00;
+    animation: touch-bounce 1s infinite alternate;
+  }
+
+  .card:active::before {
+    animation: touch-glow 1.2s infinite linear;
+  }
+}
+
+@keyframes touch-bounce {
+  0% {
+    transform: scale(0.98);
+    box-shadow: 0 4px 16px rgba(255, 0, 0, 0.5);
+    border-color: #f00;
+  }
+  100% {
+    transform: scale(1.02);
+    box-shadow: 0 8px 32px rgba(255, 0, 0, 0.7);
+    border-color: #f00;
+  }
+}
+
+@keyframes touch-glow {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0.5;
+  }
+}
+
+/* Optional: Add this for smoother animations */
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+#filter {
+  background: linear-gradient(135deg, #111 0%, #300 100%);
+  padding: 15px;
+  margin-bottom: 30px;
+  border: 2px solid #600;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  top: 0;
+  z-index: 100;
+  justify-content: space-between;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 140px;
+}
+
+.filter-group label {
+  color: #fff;
+  font-family: "Metal Mania", cursive;
+  text-shadow: 0 0 5px #f00;
+  font-size: 0.9em;
+}
+
+.filter-group select, 
+.filter-group input {
+  background: #000;
+  color: #fff;
+  border: 1px solid #600;
+  padding: 8px;
+  border-radius: 4px;
+  min-width: 0;
+  width: 100%;
+  font-family: inherit;
+}
+
+.filter-group select:focus,
+.filter-group input:focus {
+  outline: none;
+  border-color: #f00;
+  box-shadow: 0 0 5px #f00;
+}
+
+.reset-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.reset-btn {
+  background: #600;
+  color: #fff;
+  border: 1px solid #900;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+  font-size: 0.9em;
+  min-width: 120px;
+}
+
+.reset-btn:hover {
+  background: #900;
+  box-shadow: 0 0 10px #f00;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.sort-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #600;
+  flex: 1;
+  min-width: 140px;
+}
+
+.sort-filter-group {
+  display: flex;
+  gap: 10px;
+}
+
+.sort-label {
+  color: #fff;
+  font-family: "Metal Mania", cursive;
+  text-shadow: 0 0 5px #f00;
+  margin-bottom: 8px;
+  display: block;
+  font-size: 0.9em;
+}
+
+.radio-group {
+  display: flex;
+  gap: 10px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.radio-label input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #600;
+  border-radius: 50%;
+  background: #000;
+  cursor: pointer;
+  position: relative;
+}
+
+.radio-label input[type="radio"]:checked::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #f00;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: radioGlow 1.5s infinite alternate;
+}
+
+.radio-text {
+  color: #fff;
+  font-family: inherit;
+  text-shadow: 0 0 3px #f00;
+  font-size: 1.2em;
+}
+
+@keyframes radioGlow {
+  from {
+    box-shadow: 0 0 5px #f00;
+  }
+  to {
+    box-shadow: 0 0 10px #f00, 0 0 20px #f00;
+  }
+}
+
+/* New live filters styles */
+.live-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #600;
+  flex: 1;
+  min-width: 140px;
+}
+
+.live-filter-group {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-btn {
+  background: #600;
+  color: #fff;
+  border: 1px solid #900;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+  font-size: 0.9em;
+  flex: 1;
+  min-width: 0;
+}
+
+.filter-btn:hover {
+  background: #900;
+  box-shadow: 0 0 10px #f00;
+}
+
+.filter-btn.active {
+  background: #f00;
+  box-shadow: 0 0 15px #f00;
+}
+
+.soon-options {
+  display: flex;
+  gap: 10px;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.soon-options label {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.soon-options input[type="radio"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #600;
+  border-radius: 50%;
+  background: #000;
+  cursor: pointer;
+  position: relative;
+}
+
+.soon-options input[type="radio"]:checked::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #f00;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: radioGlow 1.5s infinite alternate;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Timestamp container */
+.timestamp-container {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #600;
+  gap: 15px;
+}
+
+#current-time {
+  color: #fff;
+  font-family: "Metal Mania", cursive;
+  text-shadow: 0 0 5px #f00;
+}
+
+.refresh-btn {
+  background: #600;
+  color: #fff;
+  border: 1px solid #900;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.2em;
+  transition: all 0.3s;
+  line-height: 1;
+}
+
+.refresh-btn:hover {
+  background: #900;
+  box-shadow: 0 0 10px #f00;
+}
+
+/* Visual indicators for cards */
+.card.playing-now {
+  border-color: #0f0;
+  box-shadow: 0 4px 16px rgba(0, 255, 0, 0.5);
+  animation: pulseGreen 2s infinite alternate;
+}
+
+.card.starting-soon {
+  border-color: #ffb300 !important;
+  box-shadow: 0 0 24px 8px #ffe066, 0 0 0 4px #ffb300;
+  animation: pulseStartingSoon 1.2s infinite alternate;
+  position: relative;
+}
+
+.card.starting-soon::before {
+  content: '⏰';
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 1.5em;
+  color: #ffb300;
+  text-shadow: 0 0 8px #fffbe6, 0 0 12px #ffb300;
+  z-index: 10;
+  pointer-events: none;
+  animation: badgeSoonPulse 1.2s infinite alternate;
+}
+
+@keyframes pulseGreen {
+  0% {
+    box-shadow: 0 4px 16px rgba(0, 255, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 4px 32px rgba(0, 255, 0, 0.8);
+  }
+}
+
+@keyframes pulseStartingSoon {
+  0% {
+    box-shadow: 0 0 12px 2px #ffe066, 0 0 0 2px #ffb300;
+    border-color: #ffe066;
+  }
+  100% {
+    box-shadow: 0 0 32px 12px #ffd700, 0 0 0 6px #ffb300;
+    border-color: #ffd700;
+  }
+}
+
+@keyframes badgeSoonPulse {
+  0% {
+    color: #ffe066;
+    text-shadow: 0 0 8px #fffbe6, 0 0 12px #ffb300;
+    transform: scale(1);
+  }
+  100% {
+    color: #ffd700;
+    text-shadow: 0 0 16px #fffbe6, 0 0 24px #ffb300;
+    transform: scale(1.15);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #filter {
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .filter-group,
+  .sort-filters,
+  .live-filters,
+  .timestamp-container {
+    width: calc(50% - 5px);
+    min-width: 140px;
+  }
+  
+  .reset-container {
+    margin-top: 15px;
+  }
+  
+  #current-time {
+    font-size: 0.85em;
+  }
+  
+  .timestamp-container {
+    padding: 8px;
+  }
+  
+  .filter-btn {
+    padding: 6px 8px;
+    font-size: 0.85em;
+  }
+  
+  .soon-options {
+    font-size: 0.8em;
+    padding: 6px;
+    gap: 8px;
+  }
+  
+  .soon-options label {
+    gap: 2px;
+  }
+  
+  .sort-label {
+    font-size: 0.85em;
+    margin-bottom: 6px;
+  }
+  
+  .radio-text {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+#filter {
+    padding: 10px;
+    gap: 8px;
+  }
+  
+  .filter-group,
+  .sort-filters,
+  .live-filters,
+  .timestamp-container {
+    width: 100%;
+  }
+  
+  .filter-group label,
+  .sort-label {
+    font-size: 0.8em;
+  }
+  
+  .filter-group select, 
+  .filter-group input,
+  .reset-btn,
+  .filter-btn {
+    padding: 6px;
+    font-size: 0.8em;
+  }
+  
+  .card.starting-soon::before {
+    font-size: 1.1em;
+    top: 5px;
+    left: 5px;
+  }
+}
+
+/* Styles pour le bouton de favoris en forme de crâne */
+.favorite-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #600;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.favorite-toggle:hover {
+  transform: scale(1.1);
+  background: rgba(50, 0, 0, 0.9);
+  border-color: #900;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+}
+
+.favorite-toggle.clicked {
+  animation: clickEffect 0.3s forwards;
+}
+
+@keyframes clickEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.favorite-toggle .skull-svg {
+  width: 28px;
+  height: 28px;
+  fill: #999;
+  transition: all 0.3s ease;
+}
+
+.favorite-toggle:hover .skull-svg {
+  fill: #fff;
+  filter: drop-shadow(0 0 2px #f00) drop-shadow(0 0 5px #f00);
+}
+
+.favorite-toggle.active {
+  background: #900;
+  border-color: #f00;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+}
+
+.favorite-toggle.active .skull-svg {
+  fill: #fff;
+  animation: skullPulse 2s infinite alternate;
+}
+
+@keyframes skullPulse {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 2px #f00);
+  }
+  100% {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 3px #f00) drop-shadow(0 0 6px #f00);
+  }
+}
+
+/* Styles pour les cartes favorites */
+.card.favorite {
+  border-color: #f00;
+  background: linear-gradient(135deg, #300 30%, #900 100%);
+  box-shadow: 0 4px 20px rgba(255, 0, 0, 0.3);
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.card.favorite:hover {
+  box-shadow: 0 8px 32px rgba(255, 0, 0, 0.6);
+  transform: perspective(1000px) translateZ(40px) rotateX(7deg);
+}
+
+/* Style pour le bouton de filtre des favoris lorsqu'il est actif */
+#show-favorites.active {
+  background: #900;
+  box-shadow: 0 0 15px #f00;
+}
+
+/* Ajouter une petite marque de favori en haut à gauche de la carte */
+.card.favorite::after {
+  content: "⭐";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 16px;
+  color: #f00;
+  text-shadow: 0 0 5px #f00;
+  animation: starPulse 2s infinite alternate;
+}
+
+@keyframes starPulse {
+  0% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.2);
+    text-shadow: 0 0 10px #f00;
+  }
+}
+
+/* Styles pour le compte à rebours métallique */
+.countdown-timer {
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  right: 0;
+  width: 80%;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #111 0%, #222 50%, #333 100%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-family: "Metal Mania", monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #555;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.8), inset 0 2px 3px rgba(255, 255, 255, 0.2);
+  z-index: 4;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  letter-spacing: 2px;
+  backdrop-filter: blur(3px);
+  transform: translateZ(10px);
+}
+
+/* Styling pour les secondes (mettre en couleur différente) */
+.countdown-timer {
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Ajouter une mise en forme spéciale pour les secondes */
+.countdown-timer span.seconds {
+  display: inline-block;
+  color: #f55;
+  font-weight: bolder;
+  animation: secondsPulse 1s infinite;
+}
+
+@keyframes secondsPulse {
+  0%, 100% {
+    color: #f55;
+  }
+  50% {
+    color: #fff;
+  }
+}
+
+/* Effet de scintillement pour le compte à rebours imminent */
+.countdown-timer.flicker {
+  opacity: 0.8;
+  text-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+}
+
+/* Compte à rebours avec différents statuts */
+.countdown-future {
+  background: linear-gradient(135deg, #222 0%, #333 50%, #444 100%);
+  color: #ccc;
+  border-color: #555;
+}
+
+.countdown-soon {
+  background: linear-gradient(135deg, #330 0%, #550 50%, #660 100%);
+  color: #ff6;
+  border-color: #aa0;
+  animation: pulseSoon 2s infinite alternate;
+}
+
+.countdown-imminent {
+  background: linear-gradient(135deg, #300 0%, #600 50%, #900 100%);
+  color: #f66;
+  border-color: #c00;
+  animation: pulseImminent 1.5s infinite alternate;
+}
+
+.countdown-live {
+  background: linear-gradient(135deg, #600 0%, #900 50%, #f00 100%);
+  color: #fff;
+  border-color: #f00;
+  animation: pulseLive 1s infinite alternate;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+}
+
+.countdown-past {
+  background: linear-gradient(135deg, #111 0%, #222 50%, #333 100%);
+  color: #777;
+  border-color: #444;
+  opacity: 0.7;
+}
+
+@keyframes pulseSoon {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 0, 0.3), inset 0 2px 3px rgba(255, 255, 255, 0.2);
+    transform: scale(1) translateZ(10px);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.5), inset 0 2px 3px rgba(255, 255, 255, 0.2);
+    transform: scale(1.05) translateZ(10px);
+  }
+}
+
+@keyframes pulseImminent {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.4), inset 0 2px 3px rgba(255, 255, 255, 0.2);
+    transform: scale(1) translateZ(10px);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.6), inset 0 2px 3px rgba(255, 255, 255, 0.2);
+    transform: scale(1.1) translateZ(10px);
+  }
+}
+
+@keyframes pulseLive {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5), inset 0 2px 3px rgba(255, 255, 255, 0.2);
+    transform: scale(1) translateZ(10px);
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.8), inset 0 2px 3px rgba(255, 255, 255, 0.2);
+    transform: scale(1.1) translateZ(10px);
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+  }
+}
+
+/* Style spécial pour les dernières secondes (moins de 60 secondes) */
+.countdown-imminent:not(:has(span.seconds)) {
+  background: linear-gradient(135deg, #500 0%, #800 50%, #b00 100%);
+  color: #fff;
+  border-color: #f00;
+  animation: finalCountdown 0.5s infinite alternate;
+}
+
+@keyframes finalCountdown {
+  0% {
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7), inset 0 2px 3px rgba(255, 255, 255, 0.3);
+    transform: scale(1) translateZ(10px);
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.9), inset 0 2px 3px rgba(255, 255, 255, 0.3);
+    transform: scale(1.15) translateZ(10px);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  }
+}
+
+/* Ajustement pour les mobiles */
+@media (max-width: 480px) {
+  .countdown-timer {
+    bottom: 4px;
+    width: 85%;
+    padding: 4px 6px;
+    font-size: 0.85rem;
+    border-width: 1px;
+    letter-spacing: 1px;
+  }
+  
+  .countdown-live {
+    font-size: 0.95rem;
+    letter-spacing: 2px;
+  }
+  
+  .card.favorite {
+    padding-bottom: 32px;
+  }
+  
+  .card {
+    padding: 8px 10px;
+    margin: 6px 0;
+  }
+  
+  .card.favorite::after {
+    font-size: 14px;
+    top: 5px;
+    left: 5px;
+  }
+}
+
+/* Effet 3D métallique pour le compte à rebours */
+.countdown-timer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+  pointer-events: none;
+  border-radius: 4px 4px 0 0;
+}
+
+/* Arrière-plan spécial pour les favoris actuellement en direct */
+.card.favorite:has(.countdown-live) {
+  background: linear-gradient(135deg, #300 0%, #900 100%);
+  border-color: #f00;
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+  animation: fireBackground 3s infinite alternate;
+}
+
+/* Ajouter un reflèt pour le compte à rebours */
+.countdown-timer::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 10%;
+  width: 80%;
+  height: 6px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
+  border-radius: 50%;
+  filter: blur(2px);
+}
+
+@keyframes fireBackground {
+  0% {
+    background-position: 0% 50%;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+  }
+  100% {
+    background-position: 100% 50%;
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.8), 0 0 80px rgba(255, 150, 0, 0.3);
+  }
+}
+
+.card > div {
+  margin-bottom: 2px;
+}
+
+header#main-header {
+  width: 100%;
+  background: linear-gradient(90deg, #300 0%, #900 100%);
+  box-shadow: 0 4px 16px #000a;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 64px;
+  min-height: 64px;
+  display: flex;
+  align-items: stretch;
+  margin: 0 0 24px 0;
+  padding: 0;
+}
+.tab-nav {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 100%;
+  width: 100%;
+}
+.tab-btn {
+  font-family: 'Metal Mania', cursive;
+  font-size: 1.4em;
+  color: #fff;
+  background: none;
+  border: none;
+  border-bottom: none;
+  padding: 0 48px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(.4,1.3,.6,1);
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 6px #000, 0 0 8px #900;
+  outline: none;
+  position: relative;
+  height: 100%;
+  min-width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+}
+.tab-btn.active, .tab-btn:focus {
+  color: #f00;
+  background: linear-gradient(90deg, #222 0%, #900 100%);
+  box-shadow: 0 2px 12px #900a;
+  z-index: 2;
+  border-bottom: 4px solid #f00;
+}
+.tab-btn:not(.active):hover {
+  color: #ffb300;
+  background: linear-gradient(90deg, #222 0%, #600 100%);
+}
+.tab-btn:not(.active) {
+  border-bottom: none;
+}
+main#main-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 40px 0;
+  min-height: 70vh;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="apero.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="modal.css">
+  <title>Apéro Hellfest</title>
+</head>
+<body>
+  <header id="main-header">
+    <nav class="tab-nav">
+      <button class="tab-btn" data-tab="home">🎸</button>
+      <button class="tab-btn" data-tab="apero">🍻</button>
+    </nav>
+  </header>
+  <main id="main-content">
+    <div class="metal-chat-container">
+      <div id="metal-chat-users" class="metal-chat-users"></div>
+      <div class="metal-chat-messages" id="chat-messages">
+        <!-- Messages JS ici -->
+        <!--
+        <div class="metal-chat-message">
+          <span class="metal-chat-pseudo">Pseudo</span>
+          <span class="metal-chat-time">2 min ago</span>
+          <div class="metal-chat-text">Message sur plusieurs lignes...</div>
+        </div>
+        -->
+      </div>
+      <form class="metal-chat-input-bar" id="chat-form" autocomplete="off">
+        <input type="text" class="metal-chat-input" id="chat-input" placeholder="Apérooooo">
+        <button type="submit" class="metal-chat-send-btn">🍻</button>
+      </form>
+    </div>
+  </main>
+  <script src="tabs.js"></script>
+  <script src="apero.js"></script>
+  <script src="modal.js"></script>
+</body>
+</html>
