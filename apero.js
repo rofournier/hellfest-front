@@ -2,6 +2,7 @@
 const WS_PROTOCOL = location.protocol === 'https:' ? 'wss:' : 'ws:';
 // Use environment variable or fallback for WebSocket URL
 const WS_URL = atob("d3M6Ly8zNy41OS4xMDcuMjM0OjgwMDAvd3M=");
+
 let ws = null;
 let pseudo = localStorage.getItem('hellpseudo') || '';
 let users = [];
@@ -49,7 +50,7 @@ function connectWS() {
 
   isConnecting = true;
   ws = new WebSocket(WS_URL);
-
+  console.log("ws", ws);
   ws.onopen = () => {
     isConnecting = false;
     pseudo = localStorage.getItem('hellpseudo') || '';
@@ -190,3 +191,4 @@ window.addEventListener('pseudoSet', (e) => {
 
 // Also check on focus in case we missed any changes
 window.addEventListener('focus', () => onPseudoAvailable());
+
