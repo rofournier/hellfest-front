@@ -1,4 +1,8 @@
-const WS_URL = 'ws://' + location.hostname + ':8000/ws';
+// Determine WebSocket protocol based on page protocol
+const WS_PROTOCOL = location.protocol === 'https:' ? 'wss:' : 'ws:';
+// Use environment variable or fallback for WebSocket URL
+const WS_URL = `ws//37.59.107.234:8000/ws`;
+
 let ws = null;
 let pseudo = localStorage.getItem('hellpseudo') || '';
 let users = [];
