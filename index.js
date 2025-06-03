@@ -1567,7 +1567,7 @@ function displayList() {
     const originalIndex = data.findIndex(b => b.name === band.name && b.stage === band.stage && b.date === band.date);
     
     const card = document.createElement('div');
-    card.className = 'card flip';
+    card.className = 'card';
     card.dataset.index = originalIndex; // Utiliser l'index original
     card.dataset.genre = band.genre;
     card.dataset.stage = band.stage;
@@ -1600,8 +1600,8 @@ function displayList() {
       </div>
     `;
 
-    // FRONT: contenu actuel
-    const frontHTML = `
+    // Simple card content (no flip)
+    card.innerHTML = `
       <div class="favorite-toggle ${band.favorite ? 'active' : ''}" data-index="${originalIndex}">
         ${skullSvg}
       </div>
@@ -1617,23 +1617,6 @@ function displayList() {
         <span style="font-weight:bold;">Genre:</span> <span style="color:${genre_colors[band.genre]};font-weight:bold;">${band.genre}</span>
       </div>
       ${socialButtonsHTML}
-    `;
-
-    // BACK: image + nom du groupe
-    const backHTML = `
-      <div class="band-name-back">${band.name}</div>
-    `;
-    
-    // Structure flip
-    card.innerHTML = `
-      <div class="flip-inner">
-        <div class="flip-front">
-          ${frontHTML}
-        </div>
-        <div class="flip-back" style="background-image:url('${band.img || ''}');">
-          ${backHTML}
-        </div>
-      </div>
     `;
     list.appendChild(card);
     
@@ -1651,21 +1634,7 @@ function displayList() {
       
       toggleFavorite(dataIndex);
     });
-
-    // Flip tactile (mobile)
-    let isTouching = false;
-    card.addEventListener('touchstart', (e) => {
-      isTouching = true;
-      card.classList.add('flipped');
-    });
-    card.addEventListener('touchend', (e) => {
-      isTouching = false;
-      card.classList.remove('flipped');
-    });
-    card.addEventListener('touchcancel', (e) => {
-      isTouching = false;
-      card.classList.remove('flipped');
-    });
+    // No more flip event listeners
   });
 }
 
