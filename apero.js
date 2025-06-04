@@ -1,7 +1,8 @@
-// Determine WebSocket protocol based on page protocol
-const WS_PROTOCOL = location.protocol === 'https:' ? 'wss:' : 'ws:';
-// Use environment variable or fallback for WebSocket URL
-const WS_URL = atob("d3M6Ly8zNy41OS4xMDcuMjM0OjgwMDAvd3M=");
+// Force WSS in production, allow WS only in development
+const IS_DEV = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+const WS_PROTOCOL = IS_DEV ? (location.protocol === 'https:' ? 'wss:' : 'ws:') : 'wss:';
+// Use relative WebSocket URL that works with Nginx proxy
+const WS_URL = `${WS_PROTOCOL}//${location.hostname}/ws/`;
 
 let ws = null;
 let pseudo = localStorage.getItem('hellpseudo') || '';

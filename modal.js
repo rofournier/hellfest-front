@@ -42,4 +42,69 @@
   if (!localStorage.getItem('hellpseudo')) {
     window.addEventListener('DOMContentLoaded', showPseudoModal);
   }
+})();
+
+// Band Image Modal Logic
+(function() {
+  let currentImageModal = null;
+
+  window.showBandImageModal = function(band) {
+    if (currentImageModal) {
+      currentImageModal.remove();
+    }
+
+    const modal = document.createElement('div');
+    modal.id = 'metal-image-modal';
+    modal.innerHTML = `
+      <div class="metal-modal-backdrop"></div>
+      <div class="metal-image-modal-content">
+        <div class="metal-image-modal-close">✕</div>
+        <div class="metal-image-modal-title">${band.name}</div>
+        <div class="metal-image-modal-details">
+          <div class="metal-image-modal-info">
+            <span class="info-label">Stage:</span> ${band.stage}
+          </div>
+          <div class="metal-image-modal-info">
+            <span class="info-label">Date:</span> ${band.date}
+          </div>
+          <div class="metal-image-modal-info">
+            <span class="info-label">Time:</span> ${band.time}
+          </div>
+          <div class="metal-image-modal-info">
+            <span class="info-label">Genre:</span> ${band.genre}
+          </div>
+        </div>
+        <div class="metal-image-modal-img-container">
+          <img src="${band.img}" alt="${band.name}" class="metal-image-modal-img" />
+        </div>
+      </div>
+    `;
+
+    document.body.appendChild(modal);
+    document.body.classList.add('modal-open');
+    currentImageModal = modal;
+
+    // Add close functionality
+    const closeModal = () => {
+      document.body.classList.remove('modal-open');
+      modal.remove();
+      currentImageModal = null;
+    };
+
+    modal.querySelector('.metal-image-modal-close').addEventListener('click', closeModal);
+    modal.addEventListener('click', function(e) {
+      if (e.target.classList.contains('metal-modal-backdrop')) {
+        closeModal();
+      }
+    });
+
+    // Add escape key listener
+    const escapeListener = (e) => {
+      if (e.key === 'Escape') {
+        closeModal();
+        document.removeEventListener('keydown', escapeListener);
+      }
+    };
+    document.addEventListener('keydown', escapeListener);
+  };
 })(); 

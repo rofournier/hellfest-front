@@ -1588,6 +1588,15 @@ function displayList() {
       countdownHTML = `<div class="countdown-timer ${countdown.className}">${countdown.text}</div>`;
     }
 
+    // Add image preview container
+    const imagePreviewHTML = `
+      <div class="band-image-preview" style="background-image: url('${band.img}')">
+        <div class="image-overlay">
+          <span class="view-image-text">View Image</span>
+        </div>
+      </div>
+    `;
+
     // Add social media buttons HTML
     const socialButtonsHTML = `
       <div class="social-buttons">
@@ -1606,6 +1615,7 @@ function displayList() {
         ${skullSvg}
       </div>
       ${countdownHTML}
+      ${imagePreviewHTML}
       <div style="font-size:1.3em;font-weight:bold;margin-bottom:4px;line-height:1.1;">${band.name}</div>
       <div style="font-size:0.95em;margin-bottom:2px;">
         <span style="font-weight:bold;">Stage:</span> ${band.stage}
@@ -1634,13 +1644,64 @@ function displayList() {
       
       toggleFavorite(dataIndex);
     });
-    // No more flip event listeners
+
+    // Add click event for the image preview
+    const imagePreview = card.querySelector('.band-image-preview');
+    imagePreview.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showBandImageModal(band);
+    });
   });
 }
 
 // Add this CSS at the beginning of the file
 const style = document.createElement('style');
 style.textContent = `
+  .band-image-preview {
+    width: 100%;
+    height: 140px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #900;
+    box-shadow: 0 2px 8px #0004;
+    transition: transform 0.2s ease-out;
+  }
+
+  .band-image-preview:hover {
+    transform: scale(1.02);
+  }
+
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+    opacity: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 12px;
+    transition: opacity 0.2s ease-out;
+  }
+
+  .band-image-preview:hover .image-overlay {
+    opacity: 1;
+  }
+
+  .view-image-text {
+    color: #fff;
+    font-size: 0.9em;
+    text-shadow: 0 1px 4px #000;
+    font-weight: bold;
+  }
+
   .social-buttons {
     display: flex;
     justify-content: center;
