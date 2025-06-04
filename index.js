@@ -2187,14 +2187,16 @@ function applySorting(sortType) {
     
     // Ensuite appliquer le tri spécifié
     if (sortType === 'alphabetical') {
-      const nameA = a.querySelector('div:nth-child(2)').textContent.toLowerCase();
-      const nameB = b.querySelector('div:nth-child(2)').textContent.toLowerCase();
+      const nameA = a.dataset.name.toLowerCase();
+      const nameB = b.dataset.name.toLowerCase();
       return nameA.localeCompare(nameB);
     } else { // chronological
-      const dateA = a.querySelectorAll('div')[3].textContent.split(':')[1].trim();
-      const dateB = b.querySelectorAll('div')[3].textContent.split(':')[1].trim();
-      const timeA = a.querySelectorAll('div')[4].textContent.split(':')[1].trim().split(' - ')[0];
-      const timeB = b.querySelectorAll('div')[4].textContent.split(':')[1].trim().split(' - ')[0];
+      const dateA = a.dataset.date;
+      const dateB = b.dataset.date;
+      
+      // Récupérer les heures depuis le contenu de la carte
+      const timeA = a.querySelector('div:nth-child(6)').textContent.match(/(\d{2}:\d{2})/)[0];
+      const timeB = b.querySelector('div:nth-child(6)').textContent.match(/(\d{2}:\d{2})/)[0];
       
       const dateCompare = dateA.localeCompare(dateB);
       if (dateCompare !== 0) return dateCompare;
