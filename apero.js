@@ -9,97 +9,91 @@ let pseudo = localStorage.getItem('hellpseudo') || '';
 let users = [];
 let isConnecting = false;
 let reconnectTimeout = null;
+let hasReceivedPseudoConfirmation = false;
+
 const usersDiv = document.getElementById('metal-chat-users');
 const messagesDiv = document.getElementById('chat-messages');
 const form = document.getElementById('chat-form');
 const input = document.getElementById('chat-input');
 
 function setChatEnabled(enabled) {
-  input.disabled = !enabled;
-  form.querySelector('button[type="submit"]').disabled = !enabled;
-  if (enabled) {
-    input.focus();
-  }
+    input.disabled = !enabled;
+    form.querySelector('button[type="submit"]').disabled = !enabled;
+    if (enabled) {
+        input.focus();
+    }
 }
 
 function renderUsers() {
-  // Always show your pseudo at the start, even if alone
-  const allUsers = users.length ? users : (pseudo ? [pseudo] : []);
-  usersDiv.innerHTML = `<marquee>Assoifés: ${allUsers.map(u => escapeHTML(u)).join(', ')}</marquee>`;
+    const allUsers = users.length ? users : (pseudo ? [pseudo] : []);
+    usersDiv.innerHTML = `<marquee>Assoifés: ${allUsers.map(u => escapeHTML(u)).join(', ')}</marquee>`;
 }
 
 function connectWS() {
-  // Prevent multiple simultaneous connection attempts
-  if (isConnecting || (ws && ws.readyState === WebSocket.CONNECTING)) {
-    return;
-  }
-
-  // Clear any pending reconnect
-  if (reconnectTimeout) {
-    clearTimeout(reconnectTimeout);
-    reconnectTimeout = null;
-  }
-
-  // Close existing connection if any
-  if (ws) {
-    try {
-      ws.close();
-    } catch (e) {
-      console.error('Error closing websocket:', e);
+    if (isConnecting || (ws && ws.readyState === WebSocket.CONNECTING)) {
+        return;
     }
-  }
 
-  isConnecting = true;
-  ws = new WebSocket(WS_URL);
-  console.log("ws", ws);
-  ws.onopen = () => {
-    isConnecting = false;
-    pseudo = localStorage.getItem('hellpseudo') || '';
-    if (pseudo) {
-      ws.send(JSON.stringify({ type: 'pseudo', txt: pseudo }));
-      setChatEnabled(true);
-      renderUsers();
-    } else {
-      setChatEnabled(false);
+    if (reconnectTimeout) {
+        clearTimeout(reconnectTimeout);
+        reconnectTimeout = null;
     }
-  };
 
-  ws.onmessage = (event) => {
-    let data;
-    try {
-      data = JSON.parse(event.data);
-    } catch (e) {
-      console.error('Error parsing message:', e);
-      return;
+    if (ws) {
+        try {
+            ws.close();
+        } catch (e) {
+            console.error('Error closing websocket:', e);
+        }
     }
-    if (data.type === 'pseudos') {
-      users = data.pseudos || [];
-      renderUsers();
-    } else if (data.type === 'message') {
-      renderMessage(data);
-    } else if (data.type === 'history') {
-      // Clear existing messages when receiving history
-      messagesDiv.innerHTML = '';
-      // Render each message in the history
-      data.messages.forEach(msg => renderMessage(msg));
-    } else if (data.type === 'system') {
-      renderSystemMessage(data.txt);
-    }
-  };
 
-  ws.onerror = (error) => {
-    console.error('WebSocket error:', error);
-    isConnecting = false;
-  };
+    isConnecting = true;
+    hasReceivedPseudoConfirmation = false;
+    ws = new WebSocket(WS_URL);
 
-  ws.onclose = (event) => {
-    isConnecting = false;
-    setChatEnabled(false);
-    // Only reconnect if we have a pseudo and it wasn't a clean closure
-    if (pseudo && event.code !== 1000) {
-      reconnectTimeout = setTimeout(connectWS, 1000);
-    }
-  };
+    ws.onopen = () => {
+        isConnecting = false;
+        if (pseudo && !hasReceivedPseudoConfirmation) {
+            ws.send(JSON.stringify({ type: 'pseudo', txt: pseudo }));
+        }
+    };
+
+    ws.onmessage = (event) => {
+        let data;
+        try {
+            data = JSON.parse(event.data);
+        } catch (e) {
+            console.error('Error parsing message:', e);
+            return;
+        }
+        
+        if (data.type === 'pseudos') {
+            hasReceivedPseudoConfirmation = true;
+            users = data.pseudos || [];
+            renderUsers();
+            setChatEnabled(true);
+        } else if (data.type === 'message') {
+            renderMessage(data);
+        } else if (data.type === 'history') {
+            messagesDiv.innerHTML = '';
+            data.messages.forEach(msg => renderMessage(msg));
+        } else if (data.type === 'system') {
+            renderSystemMessage(data.txt);
+        }
+    };
+
+    ws.onerror = (error) => {
+        console.error('WebSocket error:', error);
+        isConnecting = false;
+    };
+
+    ws.onclose = (event) => {
+        isConnecting = false;
+        setChatEnabled(false);
+        if (pseudo && !hasReceivedPseudoConfirmation && event.code !== 1000) {
+            reconnectTimeout = setTimeout(connectWS, 2000);
+        }
+    };
 }
 
 function renderMessage({ txt, pseudo: msgPseudo, timestamp }) {
@@ -151,21 +145,18 @@ function onPseudoAvailable(newPseudo) {
   pseudo = newPseudo || localStorage.getItem('hellpseudo') || '';
   
   if (!pseudo) {
-    setChatEnabled(false);
-    renderUsers();
-    return;
+      setChatEnabled(false);
+      renderUsers();
+      return;
   }
 
-  // Only reconnect if we don't have a working connection
   if (!ws || ws.readyState === WebSocket.CLOSED) {
-    connectWS();
+      hasReceivedPseudoConfirmation = false;
+      connectWS();
   } else if (ws.readyState === WebSocket.OPEN && pseudo !== previousPseudo) {
-    // If connection is open but pseudo changed, send the new pseudo
-    ws.send(JSON.stringify({ type: 'pseudo', txt: pseudo }));
+      hasReceivedPseudoConfirmation = false;
+      ws.send(JSON.stringify({ type: 'pseudo', txt: pseudo }));
   }
-
-  setChatEnabled(ws && ws.readyState === WebSocket.OPEN);
-  renderUsers();
 }
 
 // Initialize on page load
