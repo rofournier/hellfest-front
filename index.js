@@ -5,7 +5,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "18:00 - 18:40",
     "genre": "METAL SYMPHONIQUE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/apocalyptica_d8d46d383e.jpg"
+    "img": "images/apocalyptica.jpg"
   },
   {
     "name": "AIRBOURNE",
@@ -13,7 +13,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "19:30 - 20:20",
     "genre": "HARD ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/airbourne_dca0cc4c7e.jpg"
+    "img": "images/airbourne.jpg"
   },
   {
     "name": "TILL LINDEMANN",
@@ -21,7 +21,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "21:20 - 22:20",
     "genre": "METAL INDUSTRIEL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/till_lindemann_4db82bc0d8.jpg"
+    "img": "images/till_lindemann.jpg"
   },
   {
     "name": "KORN",
@@ -29,7 +29,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "23:30 - 01:00",
     "genre": "NU METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/korn_16d3308de7.jpg"
+    "img": "images/korn.jpg"
   },
   {
     "name": "SKINDRED",
@@ -37,7 +37,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "16:30 - 17:10",
     "genre": "RAGGA METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/xlarge_skindred_9938afffbb.jpg"
+    "img": "images/skindred.jpg"
   },
   {
     "name": "CACHEMIRE",
@@ -45,7 +45,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "11:05 - 11:35",
     "genre": "ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/xlarge_cachemire_85a56a9238.jpg"
+    "img": "images/cachemire.jpg"
   },
   {
     "name": "VOWWS",
@@ -53,7 +53,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "12:15 - 12:45",
     "genre": "DEATH-POP",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/vowws_bb4d095ad3.jpg"
+    "img": "images/vowws.jpg"
   },
   {
     "name": "LAST TRAIN",
@@ -61,7 +61,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "13:35 - 14:15",
     "genre": "ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/last_train_b9bb6d12a0.jpg"
+    "img": "images/last_train.jpg"
   },
   {
     "name": "THE WARNING",
@@ -69,7 +69,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "15:05 - 15:45",
     "genre": "HARD ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/the_warning_7947ba4fa9.jpg"
+    "img": "images/the_warning.jpg"
   },
   {
     "name": "ROYAL REPUBLIC",
@@ -77,7 +77,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "16:40 - 17:30",
     "genre": "ROCK'N ROLL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/royal_republic_f90ab04047.jpg"
+    "img": "images/royal_republic.jpg"
   },
   {
     "name": "THE CULT",
@@ -85,7 +85,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "18:35 - 19:25",
     "genre": "HARD ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/the_cult_72b0e80691.jpg"
+    "img": "images/the_cult.jpg"
   },
   {
     "name": "THE HU",
@@ -93,7 +93,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "20:35 - 21:40",
     "genre": "HUNNU ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/the_hu_91f2ba2762.jpg"
+    "img": "images/the_hu.jpg"
   },
   {
     "name": "MUSE",
@@ -101,7 +101,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "23:05 - 00:35",
     "genre": "ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/muse_c1222c9a20.jpg"
+    "img": "images/muse.jpg"
   },
   {
     "name": "LUCIE SUE",
@@ -109,7 +109,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "11:05 - 11:35",
     "genre": "ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/lucie_sue_167efa9fb1.jpg"
+    "img": "images/lucie_sue.jpg"
   },
   {
     "name": "AUDREY HORNE",
@@ -117,7 +117,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "12:15 - 12:45",
     "genre": "HARD ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/audrey_horne_80c829299f.jpg"
+    "img": "images/audrey_horne.jpg"
   },
   {
     "name": "THE SOUTHERN RIVER BAND",
@@ -125,7 +125,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "13:35 - 14:15",
     "genre": "HARD ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/the_southern_river_band_fd4c11e45e.jpg"
+    "img": "images/the_southern_river_band.jpg"
   },
   {
     "name": "D-A-D",
@@ -133,7 +133,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "15:10 - 15:55",
     "genre": "HARD ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/D_A_D_facc675080.jpg"
+    "img": "images/d_a_d.jpg"
   },
   {
     "name": "MYLES KENNEDY",
@@ -141,7 +141,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "16:50 - 17:35",
     "genre": "HARD ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/myles_kennedy_af00001b2f.jpg"
+    "img": "images/myles_kennedy.jpg"
   },
   {
     "name": "BLACK COUNTRY COMMUNION",
@@ -149,7 +149,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "18:30 - 19:30",
     "genre": "HARD ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/black_country_communion_b61590dd6c.jpg"
+    "img": "images/black_country_communion.jpg"
   },
   {
     "name": "SATCHVAI BAND : JOE SATRIANI & STEVE VAI",
@@ -157,7 +157,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "20:35 - 21:45",
     "genre": "HARD ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/joe_satriani_steve_vai_1f2766369f.jpg"
+    "img": "images/satchvai_band_joe_satriani_steve_vai.jpg"
   },
   {
     "name": "SCORPIONS",
@@ -165,7 +165,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "23:10 - 00:40",
     "genre": "HARD ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/scorpions_646afba683.jpg"
+    "img": "images/scorpions.jpg"
   },
   {
     "name": "BASTARDANE",
@@ -173,7 +173,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "11:05 - 11:35",
     "genre": "HARD ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/bastardane_35088cb285.jpg"
+    "img": "images/bastardane.jpg"
   },
   {
     "name": "ASHEN",
@@ -181,7 +181,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "12:15 - 12:45",
     "genre": "METALCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/ashen_893cf37ac1.jpg"
+    "img": "images/ashen.jpg"
   },
   {
     "name": "BLACKGOLD",
@@ -189,7 +189,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "13:35 - 14:15",
     "genre": "NU METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/blackgold_3026bf66a8.jpg"
+    "img": "images/blackgold.jpg"
   },
   {
     "name": "DEAD POET SOCIETY",
@@ -197,7 +197,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "15:10 - 15:55",
     "genre": "ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/dead_poet_society_ad2616aa02.jpg"
+    "img": "images/dead_poet_society.jpg"
   },
   {
     "name": "EAGLES OF DEATH METAL",
@@ -205,7 +205,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "16:50 - 17:40",
     "genre": "ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/eagles_of_death_metal_af04c3a160.jpg"
+    "img": "images/eagles_of_death_metal.jpg"
   },
   {
     "name": "REFUSED",
@@ -213,7 +213,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "18:40 - 19:40",
     "genre": "PUNK HARDCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/refused_586900ac75.jpg"
+    "img": "images/refused.jpg"
   },
   {
     "name": "CYPRESS HILL",
@@ -221,7 +221,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "20:50 - 21:50",
     "genre": "HIP-HOP",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/cypress_hill_6dba8f81b5.jpg"
+    "img": "images/cypress_hill.jpg"
   },
   {
     "name": "LINKIN PARK",
@@ -229,7 +229,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "23:00 - 00:30",
     "genre": "NU-METAL / ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/linkin_park_4449b154bc.jpg"
+    "img": "images/linkin_park.jpg"
   },
   {
     "name": "SEVEN HOURS AFTER VIOLET",
@@ -237,7 +237,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "17:15 - 17:55",
     "genre": "NU METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/seven_hours_after_violet_5405c4fccc.jpg"
+    "img": "images/seven_hours_after_violet.jpg"
   },
   {
     "name": "KIM DRACULA",
@@ -245,7 +245,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "18:45 - 19:25",
     "genre": "TRAP METAL / NU METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/kim_dracula_275eb79019.jpg"
+    "img": "images/kim_dracula.jpg"
   },
   {
     "name": "IMMINENCE",
@@ -253,7 +253,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "20:25 - 21:15",
     "genre": "METALCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/imminence_7910298914.jpg"
+    "img": "images/imminence.jpg"
   },
   {
     "name": "ULTRA VOMIT",
@@ -261,7 +261,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "22:25 - 23:25",
     "genre": "METAL PARODIQUE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/ultra_vomit_f7252560bb.jpg"
+    "img": "images/ultra_vomit.jpg"
   },
   {
     "name": "ELECTRIC CALLBOY",
@@ -269,7 +269,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "01:05 - 02:05",
     "genre": "METALCORE ELECTRONIQUE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/electric_callboy_04da8544c7.jpg"
+    "img": "images/electric_callboy.jpg"
   },
   {
     "name": "SUN",
@@ -277,7 +277,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "10:30 - 11:00",
     "genre": "BRUTAL POP",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/sun_3a943214bb.jpg"
+    "img": "images/sun.jpg"
   },
   {
     "name": "CHARLOTTE WESSELS",
@@ -285,7 +285,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "11:40 - 12:10",
     "genre": "METAL MÉLODIQUE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/charlotte_wessels_5041c74129.jpg"
+    "img": "images/charlotte_wessels.jpg"
   },
   {
     "name": "AMIRA ELFEKY",
@@ -293,7 +293,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "12:50 - 13:30",
     "genre": "METAL ALTERNATIF",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/amira_elfeky_071e263c8e.jpg"
+    "img": "images/amira_elfeky.jpg"
   },
   {
     "name": "FUTURE PALACE",
@@ -301,7 +301,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "14:20 - 15:00",
     "genre": "POST HARDCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/future_palace_39cde8a0b3.jpg"
+    "img": "images/future_palace.jpg"
   },
   {
     "name": "KITTIE",
@@ -309,7 +309,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "15:50 - 16:35",
     "genre": "NU METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/kittie_0097d83f74.jpg"
+    "img": "images/kittie.jpg"
   },
   {
     "name": "SPIRITBOX",
@@ -317,7 +317,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "17:35 - 18:30",
     "genre": "METALCORE / DJENT",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/spiritbox_7c24b4925c.jpg"
+    "img": "images/spiritbox.jpg"
   },
   {
     "name": "EPICA",
@@ -325,7 +325,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "19:30 - 20:30",
     "genre": "METAL SYMPHONIQUE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/epica_adf61dd8c2.jpg"
+    "img": "images/epica.jpg"
   },
   {
     "name": "WITHIN TEMPTATION",
@@ -333,7 +333,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "21:45 - 23:00",
     "genre": "METAL SYMPHONIQUE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/within_temptation_1edefc6b23.jpg"
+    "img": "images/within_temptation.jpg"
   },
   {
     "name": "HEILUNG",
@@ -341,7 +341,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "00:40 - 02:10",
     "genre": "NEO FOLK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/heilung_a5fcd7b96e.jpg"
+    "img": "images/heilung.jpg"
   },
   {
     "name": "ADX",
@@ -349,7 +349,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "10:30 - 11:00",
     "genre": "SPEED METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/adx_bd3a5bf009.jpg"
+    "img": "images/adx.jpg"
   },
   {
     "name": "MAJESTICA",
@@ -357,7 +357,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "11:40 - 12:10",
     "genre": "POWER METAL SYMPHONIQUE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/majestica_51df1ff3e5.jpg"
+    "img": "images/majestica.jpg"
   },
   {
     "name": "ROSS THE BOSS",
@@ -365,7 +365,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "12:50 - 13:30",
     "genre": "HEAVY METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/ross_the_boss_b7bc269f70.jpg"
+    "img": "images/ross_the_boss.jpg"
   },
   {
     "name": "FREAK KITCHEN",
@@ -373,7 +373,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "14:20 - 15:05",
     "genre": "HEAVY METAL PROGRESSIF",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/freak_kitchen_9a64ca247c.jpg"
+    "img": "images/freak_kitchen.jpg"
   },
   {
     "name": "VISIONS OF ATLANTIS",
@@ -381,7 +381,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "16:00 - 16:45",
     "genre": "METAL SYMPHONIQUE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/xlarge_visions_of_atlantis_65307ebb1c.jpg"
+    "img": "images/visions_of_atlantis.jpg"
   },
   {
     "name": "BEYOND THE BLACK",
@@ -389,7 +389,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "17:40 - 18:25",
     "genre": "METAL SYMPHONIQUE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/beyond_the_black_cfb451d6f2.jpg"
+    "img": "images/beyond_the_black.jpg"
   },
   {
     "name": "SAVATAGE",
@@ -397,7 +397,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "19:35 - 20:30",
     "genre": "HEAVY METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/savatage_f26b3a6e34.jpg"
+    "img": "images/savatage.jpg"
   },
   {
     "name": "JUDAS PRIEST",
@@ -405,7 +405,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "21:50 - 23:05",
     "genre": "HEAVY METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/judas_priest2_031819a247.jpg"
+    "img": "images/judas_priest.jpg"
   },
   {
     "name": "DREAM THEATER",
@@ -413,7 +413,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "00:45 - 02:00",
     "genre": "METAL PROGRESSIF",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/dream_theater_f2deb323d3.jpg"
+    "img": "images/dream_theater.jpg"
   },
   {
     "name": "THE CHAINSAW MOTEL",
@@ -421,7 +421,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "10:30 - 11:00",
     "genre": "NU CORE / STONER",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/the_chainsaw_motel_8680212aa6.jpg"
+    "img": "images/the_chainsaw_motel.jpg"
   },
   {
     "name": "BLOOD COMMAND",
@@ -429,7 +429,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "11:40 - 12:10",
     "genre": "DEATHPOP / PUNK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/xlarge_blood_command_9e41627576.jpg"
+    "img": "images/blood_command.jpg"
   },
   {
     "name": "NOVELISTS",
@@ -437,7 +437,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "12:50 - 13:30",
     "genre": "METALCORE / DJENT",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/novelists_1d69248806.jpg"
+    "img": "images/novelists.jpg"
   },
   {
     "name": "POPPY",
@@ -445,7 +445,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "14:20 - 15:05",
     "genre": "POP METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/poppy_89538308cd.jpg"
+    "img": "images/poppy.jpg"
   },
   {
     "name": "LORNA SHORE",
@@ -453,7 +453,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "16:00 - 16:45",
     "genre": "DEATHCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/lorna_shore_b6d3bcc16e.jpg"
+    "img": "images/lorna_shore.jpg"
   },
   {
     "name": "MOTIONLESS IN WHITE",
@@ -461,7 +461,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "17:45 - 18:35",
     "genre": "METALCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/motionless_in_white_d7f3fda585.jpg"
+    "img": "images/motionless_in_white.jpg"
   },
   {
     "name": "A DAY TO REMEMBER",
@@ -469,7 +469,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "19:45 - 20:45",
     "genre": "POST HARDCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/a_day_to_remember_850d347772.jpg"
+    "img": "images/a_day_to_remember.jpg"
   },
   {
     "name": "FALLING IN REVERSE",
@@ -477,7 +477,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "21:55 - 22:55",
     "genre": "POST-HARDCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/falling_in_reverse_c3b16e082e.jpg"
+    "img": "images/falling_in_reverse.jpg"
   },
   {
     "name": "TEEN MORTGAGE",
@@ -485,7 +485,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "17:15 - 17:55",
     "genre": "GARAGE PUNK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/teen_mortgage_e6a7f7ea68.jpg"
+    "img": "images/teen_mortgage.jpg"
   },
   {
     "name": "STREET DOGS",
@@ -493,7 +493,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "18:45 - 19:35",
     "genre": "PUNK ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/street_dogs_3683374566.jpg"
+    "img": "images/street_dogs.jpg"
   },
   {
     "name": "SOFT PLAY",
@@ -501,7 +501,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "20:45 - 21:45",
     "genre": "PUNK ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/soft_play_00db72166d.jpg"
+    "img": "images/soft_play.jpg"
   },
   {
     "name": "THE HELLACOPTERS",
@@ -509,7 +509,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "22:55 - 23:55",
     "genre": "GARAGE ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/the_hellacopters_4b00ab7a16.jpg"
+    "img": "images/the_hellacopters.jpg"
   },
   {
     "name": "TURBONEGRO",
@@ -517,7 +517,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "01:05 - 02:05",
     "genre": "DEATH PUNK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/turbonegro_d125da6128.jpg"
+    "img": "images/turbonegro.jpg"
   },
   {
     "name": "BÉTON ARMÉ",
@@ -525,7 +525,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "11:05 - 11:35",
     "genre": "OÏ",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/beton_arme_5d333fbc7f.jpg"
+    "img": "images/b_ton_arm.jpg"
   },
   {
     "name": "MIKE MCCOLGAN AND THE BOMB SQUAD",
@@ -533,7 +533,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "12:15 - 12:45",
     "genre": "PUNK ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/mike_mccolgan_and_the_bomb_squad_966eae3db8.jpg"
+    "img": "images/mike_mccolgan_and_the_bomb_squad.jpg"
   },
   {
     "name": "FRUSTRATION",
@@ -541,7 +541,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "13:35 - 14:15",
     "genre": "POST PUNK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/xlarge_frustration_03c1c47f8b.jpg"
+    "img": "images/frustration.jpg"
   },
   {
     "name": "LION'S LAW",
@@ -549,7 +549,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "15:10 - 15:55",
     "genre": "OÏ",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/lions_law_9755de8212.jpg"
+    "img": "images/lion_s_law.jpg"
   },
   {
     "name": "LEFTÖVER CRACK",
@@ -557,7 +557,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "16:50 - 17:40",
     "genre": "SKA PUNK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/leftover_crack_9e77ad5ad8.jpg"
+    "img": "images/left_ver_crack.jpg"
   },
   {
     "name": "THE REAL MCKENZIES",
@@ -565,7 +565,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "18:40 - 19:30",
     "genre": "PUNK CELTIQUE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/xlarge_the_real_mckenzies_d581e518a6.jpg"
+    "img": "images/the_real_mckenzies.jpg"
   },
   {
     "name": "LES GARÇONS BOUCHERS",
@@ -573,7 +573,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "20:40 - 21:40",
     "genre": "ROCK / PUNK / JAVA",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/les_garcons_bouchers_dae258c0d4.jpg"
+    "img": "images/les_gar_ons_bouchers.jpg"
   },
   {
     "name": "THE DAMNED",
@@ -581,7 +581,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "22:50 - 23:50",
     "genre": "PUNK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/the_damned_c8beb5e551.jpg"
+    "img": "images/the_damned.jpg"
   },
   {
     "name": "SEX PISTOLS & FRANK CARTER",
@@ -589,7 +589,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "01:00 - 02:10",
     "genre": "PUNK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/sex_pistols_featuring_frank_carter_64a92bb7d3.jpg"
+    "img": "images/sex_pistols_frank_carter.jpg"
   },
   {
     "name": "LAST HOUNDS",
@@ -597,7 +597,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "11:05 - 11:35",
     "genre": "PUNK HARDCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/xlarge_last_hounds_59415ca8ae.jpg"
+    "img": "images/last_hounds.jpg"
   },
   {
     "name": "PEST CONTROL",
@@ -605,7 +605,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "12:15 - 12:45",
     "genre": "CROSSOVER THRASH",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/pest_control_8198e0fa54.jpg"
+    "img": "images/pest_control.jpg"
   },
   {
     "name": "SPY",
@@ -613,7 +613,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "13:35 - 14:15",
     "genre": "HARDCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/spy_96630a6338.jpg"
+    "img": "images/spy.jpg"
   },
   {
     "name": "THE CHISEL",
@@ -621,7 +621,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "15:10 - 15:55",
     "genre": "PUNK / OÏ",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/the_chisel_63894d5e82.jpg"
+    "img": "images/the_chisel.jpg"
   },
   {
     "name": "NASTY",
@@ -629,7 +629,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "16:50 - 17:40",
     "genre": "HARDCORE BEATDOWN",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/nasty_9182a09bab.jpg"
+    "img": "images/nasty.jpg"
   },
   {
     "name": "STICK TO YOUR GUNS",
@@ -637,7 +637,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "18:40 - 19:30",
     "genre": "HARDCORE / PUNK ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/stick_to_your_guns_418799ad55.jpg"
+    "img": "images/stick_to_your_guns.jpg"
   },
   {
     "name": "TERROR",
@@ -645,7 +645,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "20:40 - 21:40",
     "genre": "HARDCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/terror_6c4e9400f2.jpg"
+    "img": "images/terror.jpg"
   },
   {
     "name": "DEFEATER",
@@ -653,7 +653,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "22:50 - 23:50",
     "genre": "HARDCORE MELODIQUE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/defeater_71818d0c69.jpg"
+    "img": "images/defeater.jpg"
   },
   {
     "name": "TURNSTILE",
@@ -661,7 +661,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "01:00 - 02:00",
     "genre": "HARDCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/xlarge_turnstile_9a35b523fd.jpg"
+    "img": "images/turnstile.jpg"
   },
   {
     "name": "CALCINE",
@@ -669,7 +669,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "11:05 - 11:35",
     "genre": "HARDCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/calcine_2462d227a8.jpg"
+    "img": "images/calcine.jpg"
   },
   {
     "name": "GOUGE AWAY",
@@ -677,7 +677,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "12:15 - 12:45",
     "genre": "POST-HARDCORE / NOISE ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/gouge_away_1013f0c51c.jpg"
+    "img": "images/gouge_away.jpg"
   },
   {
     "name": "PAIN OF TRUTH",
@@ -685,7 +685,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "13:35 - 14:15",
     "genre": "HARDCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/pain_of_truth_487f652044.jpg"
+    "img": "images/pain_of_truth.jpg"
   },
   {
     "name": "GUILT TRIP",
@@ -693,7 +693,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "15:10 - 15:55",
     "genre": "HARDCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/guilt_trip_55217d50d5.jpg"
+    "img": "images/guilt_trip.jpg"
   },
   {
     "name": "GORILLA BISCUITS",
@@ -701,7 +701,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "16:50 - 17:40",
     "genre": "HARDCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/gorilla_biscuits_79e7c92a17.jpg"
+    "img": "images/gorilla_biscuits.jpg"
   },
   {
     "name": "GOOD RIDDANCE",
@@ -709,7 +709,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "18:40 - 19:40",
     "genre": "PUNK HARDCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/good_riddance_84364d5cdc.jpg"
+    "img": "images/good_riddance.jpg"
   },
   {
     "name": "WALLS OF JERICHO",
@@ -717,7 +717,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "20:50 - 21:50",
     "genre": "HARDCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/walls_of_jericho_97470e0978.jpg"
+    "img": "images/walls_of_jericho.jpg"
   },
   {
     "name": "KNOCKED LOOSE",
@@ -725,7 +725,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "23:00 - 00:00",
     "genre": "HARDCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/knocked_loose_8b7ff92b0c.jpg"
+    "img": "images/knocked_loose.jpg"
   },
   {
     "name": "TAR POND",
@@ -733,7 +733,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "16:30 - 17:10",
     "genre": "DOOM",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/tar_pond_f355a23ceb.jpg"
+    "img": "images/tar_pond.jpg"
   },
   {
     "name": "SLOMOSA",
@@ -741,7 +741,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "18:00 - 18:40",
     "genre": "STONER / DOOM",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/slomosa_b8d85ffb76.jpg"
+    "img": "images/slomosa.jpg"
   },
   {
     "name": "CHAT PILE",
@@ -749,7 +749,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "19:40 - 20:40",
     "genre": "NOISE ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/chat_pile_facf3a9ee9.jpg"
+    "img": "images/chat_pile.jpg"
   },
   {
     "name": "MONKEY3",
@@ -757,7 +757,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "21:50 - 22:50",
     "genre": "STONER PSYCHEDELIQUE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/monkey3_4677760691.jpg"
+    "img": "images/monkey3.jpg"
   },
   {
     "name": "ORANGE GOBLIN",
@@ -765,7 +765,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "00:00 - 01:00",
     "genre": "STONER",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/orange_goblin_8cbb5b282c.jpg"
+    "img": "images/orange_goblin.jpg"
   },
   {
     "name": "WORMSAND",
@@ -773,7 +773,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "10:30 - 11:00",
     "genre": "STONER / SLUDGE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/wormsand_dd4a21e7d1.jpg"
+    "img": "images/wormsand.jpg"
   },
   {
     "name": "CASTLE RAT",
@@ -781,7 +781,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "11:40 - 12:10",
     "genre": "DOOM",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/castle_rat_ef5f954128.jpg"
+    "img": "images/castle_rat.jpg"
   },
   {
     "name": "DIRTY SOUND MAGNET",
@@ -789,7 +789,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "12:50 - 13:30",
     "genre": "ROCK PSYCHEDELIQUE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/dirty_sound_magnet_c39a677c61.jpg"
+    "img": "images/dirty_sound_magnet.jpg"
   },
   {
     "name": "SANDRIDER",
@@ -797,7 +797,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "14:20 - 15:05",
     "genre": "STONER",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/sandrider_9090aa5fe1.jpg"
+    "img": "images/sandrider.jpg"
   },
   {
     "name": "ÅRABROT \"RITE OF DIONYSUS\"",
@@ -805,7 +805,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "16:00 - 16:45",
     "genre": "NOISE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/arabrot_e55b08ae82.jpg"
+    "img": "images/rabrot_rite_of_dionysus.jpg"
   },
   {
     "name": "DOPETHRONE",
@@ -813,7 +813,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "17:45 - 18:35",
     "genre": "DOOM / SLUDGE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/dopethrone_b6fa89230e.jpg"
+    "img": "images/dopethrone.jpg"
   },
   {
     "name": "CRIPPLED BLACK PHOENIX",
@@ -821,7 +821,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "19:35 - 20:35",
     "genre": "POST-ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/xlarge_crippled_black_phoenix_e838ad842a.jpg"
+    "img": "images/crippled_black_phoenix.jpg"
   },
   {
     "name": "PENTAGRAM",
@@ -829,7 +829,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "21:45 - 22:45",
     "genre": "DOOM",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/pentagram_e8c91044cf.jpg"
+    "img": "images/pentagram.jpg"
   },
   {
     "name": "HERMANO",
@@ -837,7 +837,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "23:55 - 00:55",
     "genre": "STONER",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/hermano_bbbd7ad9f1.jpeg"
+    "img": "images/hermano.jpeg"
   },
   {
     "name": "HOWARD",
@@ -845,7 +845,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "10:30 - 11:00",
     "genre": "FUZZ ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/howard_a443da7224.jpg"
+    "img": "images/howard.jpg"
   },
   {
     "name": "THE MIDNIGHT GHOST TRAIN",
@@ -853,7 +853,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "11:40 - 12:10",
     "genre": "STONER / HARD ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/the_midnight_ghost_train_72ecc52a2d.jpg"
+    "img": "images/the_midnight_ghost_train.jpg"
   },
   {
     "name": "MARS RED SKY",
@@ -861,7 +861,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "12:50 - 13:30",
     "genre": "STONER PSYCHEDELIQUE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/mars_red_sky_53d2059607.jpg"
+    "img": "images/mars_red_sky.jpg"
   },
   {
     "name": "STONED JESUS",
@@ -869,7 +869,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "14:20 - 15:05",
     "genre": "STONER / DOOM",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/stoned_jesus_3f74cc4dec.jpg"
+    "img": "images/stoned_jesus.jpg"
   },
   {
     "name": "CONAN",
@@ -877,7 +877,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "16:00 - 16:45",
     "genre": "DOOM",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/conan_1d017f7d47.jpg"
+    "img": "images/conan.jpg"
   },
   {
     "name": "MY SLEEPING KARMA",
@@ -885,7 +885,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "17:45 - 18:35",
     "genre": "ROCK PSYCHEDELIQUE INSTRUMENTAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/my_sleeping_karma_a29a460778.jpg"
+    "img": "images/my_sleeping_karma.jpg"
   },
   {
     "name": "WINDHAND",
@@ -893,7 +893,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "19:35 - 20:35",
     "genre": "DOOM",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/xlarge_windhand_f6471aa070.jpg"
+    "img": "images/windhand.jpg"
   },
   {
     "name": "HAVE A NICE LIFE",
@@ -901,7 +901,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "21:45 - 22:45",
     "genre": "SHOAEGAZE / POST PUNK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/have_a_nice_life_94ac9ec9b5.jpg"
+    "img": "images/have_a_nice_life.jpg"
   },
   {
     "name": "RUSSIAN CIRCLES",
@@ -909,7 +909,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "23:55 - 00:55",
     "genre": "POST METAL INSTRUMENTAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/russian_circles_922bd8a5eb.jpg"
+    "img": "images/russian_circles.jpg"
   },
   {
     "name": "BLACK BILE",
@@ -917,7 +917,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "10:30 - 11:00",
     "genre": "DOOM / POST METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/black_bile_d7723bb365.jpg"
+    "img": "images/black_bile.jpg"
   },
   {
     "name": "CROWS",
@@ -925,7 +925,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "11:40 - 12:10",
     "genre": "POST PUNK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/crows_960c87438c.jpg"
+    "img": "images/crows.jpg"
   },
   {
     "name": "FAETOOTH",
@@ -933,7 +933,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "12:50 - 13:30",
     "genre": "FAIRY DOOM",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/faetooth_58c4ada547.jpg"
+    "img": "images/faetooth.jpg"
   },
   {
     "name": "PRAYERS",
@@ -941,7 +941,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "14:20 - 15:05",
     "genre": "CHOLO-GOTH",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/prayers_2387828197.jpg"
+    "img": "images/prayers.jpg"
   },
   {
     "name": "MESSA",
@@ -949,7 +949,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "16:00 - 16:45",
     "genre": "DOOM",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/messa_9bbecaf122.jpg"
+    "img": "images/messa.jpg"
   },
   {
     "name": "KYLESA",
@@ -957,7 +957,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "17:45 - 18:35",
     "genre": "SLUDGE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/kylesa_67230b1d86.jpg"
+    "img": "images/kylesa.jpg"
   },
   {
     "name": "HEALTH",
@@ -965,7 +965,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "19:45 - 20:45",
     "genre": "ELECTRO NOISE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/health_db3364d06f.jpg"
+    "img": "images/health.jpg"
   },
   {
     "name": "JERRY CANTRELL",
@@ -973,7 +973,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "21:55 - 22:55",
     "genre": "ROCK / GRUNGE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/jerry_cantrell_6e88503d07.jpg"
+    "img": "images/jerry_cantrell.jpg"
   },
   {
     "name": "WALKWAYS",
@@ -981,7 +981,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "16:30 - 17:10",
     "genre": "METAL ALTERNATIF",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/walkways_3dd77e66b5.jpg"
+    "img": "images/walkways.jpg"
   },
   {
     "name": "MENTAL CRUELTY",
@@ -989,7 +989,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "18:00 - 18:40",
     "genre": "BLACKENED DEATHCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/mental_cruelty_67aa4560a7.jpg"
+    "img": "images/mental_cruelty.jpg"
   },
   {
     "name": "FIT FOR AN AUTOPSY",
@@ -997,7 +997,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "19:40 - 20:40",
     "genre": "DEATHCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/fit_for_an_autopsy_a16b93658a.jpg"
+    "img": "images/fit_for_an_autopsy.jpg"
   },
   {
     "name": "JINJER",
@@ -1005,7 +1005,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "21:50 - 22:50",
     "genre": "METALCORE / DJENT",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/jinjer_78bf0e3300.jpg"
+    "img": "images/jinjer.jpg"
   },
   {
     "name": "WHITECHAPEL",
@@ -1013,7 +1013,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "00:00 - 01:00",
     "genre": "DEATHCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/whitechapel_8609ed29b2.jpg"
+    "img": "images/whitechapel.jpg"
   },
   {
     "name": "FURIES",
@@ -1021,7 +1021,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "10:30 - 11:00",
     "genre": "HEAVY METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/furies_14fe177ed0.jpg"
+    "img": "images/furies.jpg"
   },
   {
     "name": "HEXECUTOR",
@@ -1029,7 +1029,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "11:40 - 12:10",
     "genre": "THRASH METAL / SPEED METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/hexecutor_4b729d0406.jpg"
+    "img": "images/hexecutor.jpg"
   },
   {
     "name": "THE NIGHT ETERNAL",
@@ -1037,7 +1037,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "12:50 - 13:30",
     "genre": "HEAVY METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/the_night_eternal_dc9d3839c4.jpg"
+    "img": "images/the_night_eternal.jpg"
   },
   {
     "name": "BURNING WITCHES",
@@ -1045,7 +1045,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "14:20 - 15:05",
     "genre": "HEAVY METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/burning_witches_04ac92e348.jpg"
+    "img": "images/burning_witches.jpg"
   },
   {
     "name": "NERVOSA",
@@ -1053,7 +1053,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "16:00 - 16:45",
     "genre": "THRASH METAL / DEATH METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/nervosa_483a381f4b.jpg"
+    "img": "images/nervosa.jpg"
   },
   {
     "name": "3 INCHES OF BLOOD",
@@ -1061,7 +1061,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "17:45 - 18:35",
     "genre": "THRASH / SPEED METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/3_inches_of_blood_fcb90c7540.jpg"
+    "img": "images/3_inches_of_blood.jpg"
   },
   {
     "name": "TANKARD",
@@ -1069,7 +1069,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "19:35 - 20:35",
     "genre": "THRASH METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/tankard_3ae3b44a44.jpg"
+    "img": "images/tankard.jpg"
   },
   {
     "name": "EXODUS",
@@ -1077,7 +1077,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "21:45 - 22:45",
     "genre": "THRASH METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/exodus_bd7e0d4c04.jpg"
+    "img": "images/exodus.jpg"
   },
   {
     "name": "VESTIGE",
@@ -1085,7 +1085,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "10:30 - 11:00",
     "genre": "METAL PROGRESSIF / SHOEGAZE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/vestige_36af19f8e7.jpg"
+    "img": "images/vestige.jpg"
   },
   {
     "name": "SYK",
@@ -1093,7 +1093,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "11:40 - 12:10",
     "genre": "DEATH METAL PROGRESSIF",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/syk_2295ae5b06.jpg"
+    "img": "images/syk.jpg"
   },
   {
     "name": "URNE",
@@ -1101,7 +1101,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "12:50 - 13:30",
     "genre": "METAL PROGRESSIF",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/urne_885597e395.jpg"
+    "img": "images/urne.jpg"
   },
   {
     "name": "VULTURE INDUSTRIES",
@@ -1109,7 +1109,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "14:20 - 15:05",
     "genre": "METAL PROGRESSIF",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/vulture_industries_f04db42f4f.jpg"
+    "img": "images/vulture_industries.jpg"
   },
   {
     "name": "PERSEFONE",
@@ -1117,7 +1117,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "16:00 - 16:45",
     "genre": "DEATH METAL PROGRESSIF",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/persefone_add693dc48.jpg"
+    "img": "images/persefone.jpg"
   },
   {
     "name": "WHEEL",
@@ -1125,7 +1125,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "17:45 - 18:35",
     "genre": "METAL PROGRESSIF",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/wheel_9ce7417fd2.jpg"
+    "img": "images/wheel.jpg"
   },
   {
     "name": "THE OCEAN",
@@ -1133,7 +1133,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "19:35 - 20:35",
     "genre": "POST METAL PROGRESSIF",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/the_ocean_dabca0e926.jpg"
+    "img": "images/the_ocean.jpg"
   },
   {
     "name": "VOLA",
@@ -1141,7 +1141,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "21:45 - 22:45",
     "genre": "METAL PROGRESSIF",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/vola_a1a25cd63a.jpg"
+    "img": "images/vola.jpg"
   },
   {
     "name": "LEPROUS",
@@ -1149,7 +1149,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "23:55 - 00:55",
     "genre": "METAL PROGRESSIF",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/leprous_cc53da81c1.jpg"
+    "img": "images/leprous.jpg"
   },
   {
     "name": "TSAR",
@@ -1157,7 +1157,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "10:30 - 11:00",
     "genre": "METAL PROGRESSIF",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/tsar_f2e74ac404.jpg"
+    "img": "images/tsar.jpg"
   },
   {
     "name": "GUINEAPIG",
@@ -1165,7 +1165,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "11:40 - 12:10",
     "genre": "GOREGRIND",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/guineapig_2d692062ad.jpg"
+    "img": "images/guineapig.jpg"
   },
   {
     "name": "UNE MISERE",
@@ -1173,7 +1173,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "12:50 - 13:30",
     "genre": "HARDCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/une_misere_65d4c47212.jpg"
+    "img": "images/une_misere.jpg"
   },
   {
     "name": "SIGNS OF THE SWARM",
@@ -1181,7 +1181,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "14:20 - 15:05",
     "genre": "DEATHCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/signs_of_the_swarm_a4231b130d.jpg"
+    "img": "images/signs_of_the_swarm.jpg"
   },
   {
     "name": "GUTALAX",
@@ -1189,7 +1189,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "16:00 - 16:45",
     "genre": "GRINDCORE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/gutalax_ff86dd48e2.jpg"
+    "img": "images/gutalax.jpg"
   },
   {
     "name": "CATTLE DECAPITATION",
@@ -1197,7 +1197,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "17:45 - 18:35",
     "genre": "DEATHGRIND",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/cattle_decapitation_0d81636160.jpg"
+    "img": "images/cattle_decapitation.jpg"
   },
   {
     "name": "UNLEASHED",
@@ -1205,7 +1205,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "19:45 - 20:45",
     "genre": "DEATH METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/unleashed_1a7a9f0590.jpg"
+    "img": "images/unleashed.jpg"
   },
   {
     "name": "DETHKLOK",
@@ -1213,7 +1213,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "21:55 - 22:55",
     "genre": "DEATH METAL MÉLODIQUE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/dethklok_b06f4ea328.jpg"
+    "img": "images/dethklok.jpg"
   },
   {
     "name": "MISþYRMING",
@@ -1221,7 +1221,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "17:15 - 17:55",
     "genre": "BLACK METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/default.jpg"
+    "img": "images/mis_yrming.jpg"
   },
   {
     "name": "THY CATAFALQUE",
@@ -1229,7 +1229,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "18:45 - 19:35",
     "genre": "METAL AVANT-GARDISTE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/thy_catafalque_f42101ce3e.jpg"
+    "img": "images/thy_catafalque.jpg"
   },
   {
     "name": "IHSAHN",
@@ -1237,7 +1237,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "20:45 - 21:45",
     "genre": "METAL PROGRESSIF",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/ihsahn_94684f3503.jpg"
+    "img": "images/ihsahn.jpg"
   },
   {
     "name": "SUNN O)))",
@@ -1245,7 +1245,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "22:55 - 23:55",
     "genre": "DRONE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/sunn_o_bd50159ea4.jpg"
+    "img": "images/sunn_o.jpg"
   },
   {
     "name": "ALCEST",
@@ -1253,7 +1253,7 @@ data = [
     "date": "Jeudi 19 Juin",
     "time": "01:05 - 02:05",
     "genre": "BLACKGAZE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/alcest_0b13cc49b5.jpg"
+    "img": "images/alcest.jpg"
   },
   {
     "name": "MORGARTEN",
@@ -1261,7 +1261,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "11:05 - 11:35",
     "genre": "BLACK METAL EPIQUE / FOLK METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/morgarten_aef04252e2.jpg"
+    "img": "images/morgarten.jpg"
   },
   {
     "name": "BELORE",
@@ -1269,7 +1269,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "12:15 - 12:45",
     "genre": "BLACK METAL EPIQUE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/xlarge_belore_810c9f765d.jpg"
+    "img": "images/belore.jpg"
   },
   {
     "name": "SKILTRON",
@@ -1277,7 +1277,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "13:35 - 14:15",
     "genre": "FOLK METAL CELTIQUE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/skiltron_3c74952eb5.jpg"
+    "img": "images/skiltron.jpg"
   },
   {
     "name": "LUC ARBOGAST",
@@ -1285,7 +1285,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "15:10 - 15:55",
     "genre": "FOLK / MEDIEVAL ROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/luc_arbogast_de7847f3d2.jpg"
+    "img": "images/luc_arbogast.jpg"
   },
   {
     "name": "MÅNEGARM",
@@ -1293,7 +1293,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "16:50 - 17:40",
     "genre": "FOLK / BLACK METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/manegarm_15eb7cb275.jpg"
+    "img": "images/m_negarm.jpg"
   },
   {
     "name": "SOWULO",
@@ -1301,7 +1301,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "18:40 - 19:30",
     "genre": "PAGAN / FOLK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/sowulo_11f825627d.jpg"
+    "img": "images/sowulo.jpg"
   },
   {
     "name": "TROLLFEST",
@@ -1309,7 +1309,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "20:40 - 21:40",
     "genre": "FOLK METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/trollfest_7cc992178b.jpg"
+    "img": "images/trollfest.jpg"
   },
   {
     "name": "WIND ROSE",
@@ -1317,7 +1317,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "22:50 - 23:50",
     "genre": "FOLK / POWER METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/wind_rose_6e8e1bf906.jpg"
+    "img": "images/wind_rose.jpg"
   },
   {
     "name": "IN EXTREMO",
@@ -1325,7 +1325,7 @@ data = [
     "date": "Vendredi 20 Juin",
     "time": "01:00 - 02:00",
     "genre": "FOLK METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/in_extremo_fbe36f1092.jpg"
+    "img": "images/in_extremo.jpg"
   },
   {
     "name": "LUNAR TOMBFIELDS",
@@ -1333,7 +1333,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "11:05 - 11:35",
     "genre": "BLACK METAL ATMOSPHERIQUE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/lunar_tombfields_c34a88649f.jpg"
+    "img": "images/lunar_tombfields.jpg"
   },
   {
     "name": "WITCH CLUB SATAN",
@@ -1341,7 +1341,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "12:15 - 12:45",
     "genre": "BLACK METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/witch_club_satan_f719bbee71.jpg"
+    "img": "images/witch_club_satan.jpg"
   },
   {
     "name": "TRYGLAV",
@@ -1349,7 +1349,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "13:35 - 14:15",
     "genre": "BLACK METAL MELODIQUE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/tryglav_06e8bbfd6b.jpg"
+    "img": "images/tryglav.jpg"
   },
   {
     "name": "AGRICULTURE",
@@ -1357,7 +1357,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "15:10 - 15:55",
     "genre": "BLACKGAZE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/agriculture_025a877bce.jpg"
+    "img": "images/agriculture.jpg"
   },
   {
     "name": "SPECTRAL WOUND",
@@ -1365,7 +1365,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "16:50 - 17:40",
     "genre": "BLACK METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/spectral_wound_086ee9f460.jpg"
+    "img": "images/spectral_wound.jpg"
   },
   {
     "name": "GRIMA",
@@ -1373,7 +1373,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "18:40 - 19:30",
     "genre": "BLACK METAL ATMOSPHERIQUE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/grima_cf72846faa.jpg"
+    "img": "images/grima.jpg"
   },
   {
     "name": "DEAFHEAVEN",
@@ -1381,7 +1381,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "20:40 - 21:40",
     "genre": "BLACKGAZE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/deafheaven_842316f1f5.jpg"
+    "img": "images/deafheaven.jpg"
   },
   {
     "name": "ABBATH \"DOOM OCCULTA\"",
@@ -1389,7 +1389,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "22:50 - 23:50",
     "genre": "BLACK METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/abbath_62bf0765e8.jpg"
+    "img": "images/abbath_doom_occulta.jpg"
   },
   {
     "name": "BLOOD FIRE DEATH (A TRIBUTE TO BATHORY)",
@@ -1397,7 +1397,7 @@ data = [
     "date": "Samedi 21 Juin",
     "time": "01:00 - 02:00",
     "genre": "VIKING METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/blood_fire_death_622be46efe.jpg"
+    "img": "images/blood_fire_death_a_tribute_to_bathory.jpg"
   },
   {
     "name": "GRAVEKVLT",
@@ -1405,7 +1405,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "11:05 - 11:35",
     "genre": "BLACK'N'ROLL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/gravekvlt_2b6c9bc541.jpg"
+    "img": "images/gravekvlt.jpg"
   },
   {
     "name": "THE CEMETARY GIRLZ",
@@ -1413,7 +1413,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "12:15 - 12:45",
     "genre": "DEATHROCK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/the_cemetary_girlz_71d116d962.jpg"
+    "img": "images/the_cemetary_girlz.jpg"
   },
   {
     "name": "ALUK TODOLO",
@@ -1421,7 +1421,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "13:35 - 14:15",
     "genre": "ROCK OCCULTE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/aluk_todolo_cb8a2c1816.jpg"
+    "img": "images/aluk_todolo.jpg"
   },
   {
     "name": "UNTO OTHERS",
@@ -1429,7 +1429,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "15:10 - 15:55",
     "genre": "HEAVY METAL GOTHIQUE",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/unto_others_6649acc5fd.jpg"
+    "img": "images/unto_others.jpg"
   },
   {
     "name": "SHAÂRGHOT",
@@ -1437,7 +1437,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "16:50 - 17:40",
     "genre": "METAL INDUS / ELECTRO PUNK",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/shaargot_0fae3f017c.jpg"
+    "img": "images/sha_rghot.jpg"
   },
   {
     "name": "PRIEST",
@@ -1445,7 +1445,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "18:40 - 19:40",
     "genre": "SYNTHPOP",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/priest_2482e70c91.jpg"
+    "img": "images/priest.jpg"
   },
   {
     "name": "THE KOVENANT",
@@ -1453,7 +1453,7 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "20:50 - 21:50",
     "genre": "SPACE / BLACK METAL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/the_kovenant_6bf69b5db8.jpg"
+    "img": "images/the_kovenant.jpg"
   },
   {
     "name": "EISBRECHER",
@@ -1461,9 +1461,9 @@ data = [
     "date": "Dimanche 22 Juin",
     "time": "23:00 - 00:00",
     "genre": "METAL INDUSTRIEL",
-    "img": "https://hellfest-bucket.fra1.digitaloceanspaces.com/eisbrecher_76f0eb2f68.jpg"
+    "img": "images/eisbrecher.jpg"
   }
-]
+];
 
 // Test data for live shows
 const testData = [
@@ -2375,3 +2375,8 @@ function updateCountdowns() {
 loadFavorites();
 displayList();
 displayFilter();
+
+// Export pour Node.js
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { data };
+}
