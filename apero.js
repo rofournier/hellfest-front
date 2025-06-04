@@ -2,7 +2,7 @@
 const IS_DEV = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
 const WS_PROTOCOL = IS_DEV ? (location.protocol === 'https:' ? 'wss:' : 'ws:') : 'wss:';
 // Use relative WebSocket URL that works with Nginx proxy
-const WS_URL = `${WS_PROTOCOL}//${location.hostname}/ws/`;
+const WS_URL = `${WS_PROTOCOL}//${location.hostname}/ws`;
 
 let ws = null;
 let pseudo = localStorage.getItem('hellpseudo') || '';
