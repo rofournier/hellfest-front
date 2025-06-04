@@ -2194,9 +2194,11 @@ function applySorting(sortType) {
       const dateA = a.dataset.date;
       const dateB = b.dataset.date;
       
-      // Récupérer les heures depuis le contenu de la carte
-      const timeA = a.querySelector('div:nth-child(6)').textContent.match(/(\d{2}:\d{2})/)[0];
-      const timeB = b.querySelector('div:nth-child(6)').textContent.match(/(\d{2}:\d{2})/)[0];
+      // Récupérer les heures depuis les données du groupe
+      const indexA = parseInt(a.dataset.index, 10);
+      const indexB = parseInt(b.dataset.index, 10);
+      const timeA = data[indexA].start;
+      const timeB = data[indexB].start;
       
       const dateCompare = dateA.localeCompare(dateB);
       if (dateCompare !== 0) return dateCompare;
